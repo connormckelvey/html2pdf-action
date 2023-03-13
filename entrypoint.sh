@@ -2,6 +2,8 @@
 
 
 main() {
+    ls -la
+    pwd
     html2pdf "$@"
 }
 

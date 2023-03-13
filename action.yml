@@ -11,5 +11,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - -html ${{ inputs.html }}
-    - -output ${{ inputs.html }}.pdf
+    - -html 
+    - ${{ inputs.html }}
+    - -output 
+    - ${{ inputs.html }}.pdf
