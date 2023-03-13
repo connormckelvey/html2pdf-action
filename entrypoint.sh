@@ -11,6 +11,8 @@ main() {
 
     echo "/github"
     find "/github"
+    env
+    sleep 5
 
     html2pdf "$@"
 }
