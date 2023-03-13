@@ -8,6 +8,10 @@ main() {
     ls -la /github/workspace
     echo pwd
     pwd
+
+    echo "/github"
+    find "/github"
+
     html2pdf "$@"
 }
 
