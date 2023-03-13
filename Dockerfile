@@ -6,7 +6,7 @@ RUN make
 
 FROM debian:bullseye
 
-RUN apt update && apt install -y wkhtmltopdf
+RUN apt update && apt -qq install -y wkhtmltopdf
 
 COPY --from=build /usr/src/app/dist/html2pdf /usr/local/bin/html2pdf
 COPY entrypoint.sh /entrypoint.sh
